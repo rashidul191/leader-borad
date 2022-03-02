@@ -1,5 +1,5 @@
 # leader-borad
 Plan HTML CSS Rewponsive website
 
-# Live Web Stie Here
+# Live Site Link Here
 link: https://rashidul191.github.io/leader-borad/
