@@ -1,0 +1,263 @@
+/* Common Style Start */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f3f1ff;
+}
+
+h2 {
+  color: #562eff;
+  font-size: 24px;
+}
+/* Common Style End */
+
+/* Navbar Style start */
+ul {
+  background-color: #562eff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+}
+ul div {
+  padding: 0px 200px;
+}
+ul li {
+  padding: 0 10px;
+  list-style-type: none;
+  display: inline;
+}
+li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+ul img.logo {
+  width: 30px;
+}
+
+.nav-contant {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/* Navbar Style End */
+
+/* Top Player style  start*/
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.top-section {
+  width: 870px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+}
+.top-section h2 {
+  margin-top: 3px;
+}
+.top-player {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 20px;
+  margin-bottom: 30px;
+}
+.player-info {
+  display: flex;
+  align-items: center;
+}
+.player-info img {
+  width: 56px;
+  height: 56px;
+}
+.player-info h3 {
+  margin-left: 16px;
+  font-size: 18px;
+}
+hr {
+  border: 1px solid #d1d1d1;
+  margin-bottom: 27px;
+}
+/* Top Player style  end*/
+
+/* Top Blog Style Start */
+
+.blog {
+  display: flex;
+}
+
+.blog .thumbnail img {
+  width: 177px;
+  height: 117px;
+}
+
+.blog-title-info {
+  margin-left: 16px;
+}
+
+.blog-title-info h5 {
+  color: #5c3ee2;
+  font-size: 18px;
+}
+.top-blog-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 26px;
+}
+.blog-title-info span {
+  color: #9f9f9f;
+  font-size: 16px;
+}
+/* Top Blog Style End */
+
+/* Latest Courses Style Start */
+.container {
+  margin-top: 11px;
+  width: 870px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.courses {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 24px;
+}
+
+.course .course-banner img {
+  width: 224px;
+  height: 104px;
+}
+
+.course-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.course .course-deuration {
+  padding: 8px 15px;
+  background-color: #ffe4e8;
+  border-radius: 20px;
+  color: #ff4a60;
+  font-size: 18px;
+}
+.fa-star {
+  font-size: 12px;
+}
+.fa-star.filled {
+  color: #ffc014;
+}
+
+.fa-star.ematry {
+  color: #aeaeae;
+}
+/* Latest Courses Style End */
+
+/*-----------------
+    Media Query 
+ -----------------*/
+/* Mobile Devices */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  nav {
+    display: none;
+  }
+
+  .top-section,
+  .container {
+    width: 100%;
+  }
+
+  .top-player,
+  .top-blog-info,
+  .courses {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .player-info,
+  .blog {
+    flex-direction: column;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  nav {
+    display: block;
+
+  }
+
+
+  ul div {
+    padding: 0 50px;
+  }
+
+  .top-section , .container{
+    width: 600px;
+  }
+
+  .top-player, .courses {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
+
+  .player-info{
+    flex-direction: column;
+  }
+
+  .blog .thumbnail img {
+    width: 120px;
+    height: 90px;
+}
+
+.blog-title-info h3{
+  font-size: 16px;
+}
+.blog-title-info h5{
+  font-size: 14px;
+}
+
+.courses{
+  grid-row-gap: 25px;
+}
+
+.course{
+  width: 80%;
+}
+
+.course-banner img{
+  width: 170px;
+  height: 90px;
+}
+}
+
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  nav {
+    display: block;
+
+  }
+  ul{
+    background-color: #ff4a60;
+  }
+
+  ul div {
+    padding: 0 80px;
+  }
+
+  .top-section , .container{
+    width: 730px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {} */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {} */
